@@ -14,5 +14,7 @@ public class Main {
         // s.getMessageDefault();       -- default method - not accessible in other package
         // s.getMessageProtected();     -- protected method - can not be accessed from different package
         s.getMessagePublic();           // public method - accessible from different package
+
+        Scaler sc = new Scaler();       //Default class can be accessed in same package
     }
 }
