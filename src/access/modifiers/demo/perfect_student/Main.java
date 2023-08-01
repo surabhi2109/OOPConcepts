@@ -3,6 +3,21 @@ package access.modifiers.demo.perfect_student;
 import access.modifiers.demo.student.Student;
 
 public class Main extends Student{
+
+    //Overriding with Access modifiers
+
+    /*'getMessageProtected()' in 'access.modifiers.demo.perfect_student.Main' clashes with 'getMessageProtected()' in 'access.modifiers.demo.student.Student'; attempting to assign weaker access privileges ('package-private'); was 'protected'
+
+    private/default void getMessageProtected(){
+        System.out.println("From Student's child - Protected method\"");
+    }
+     */
+
+    // protected/public overridden methods are acceptable in child class
+    protected void getMessageProtected(){
+        System.out.println("From Student's child - Protected method");
+    }
+
     public static void main(String[] args) {
         Student s = new Student();
         //s.id = 1;                     -- private attribute - can not be accessed in different package
